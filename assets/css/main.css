@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
-/*
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 .container {
 	display: flex;
 	justify-content: space-between;
@@ -32,6 +27,120 @@
 .clair {
 	color: darkgrey;
 }
+
+#loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  #loader img {
+	width: 100px;
+	height: 100px;
+  }
+  
+  .hidden {
+	display: none;
+  }
+
+
+  .contact-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.photo {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+
+.photo img {
+    display: block;
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0 0 10px;
+}
+
+.info p {
+    margin: 0;
+}
+
+.info .address:before {
+    content: "Adresse : ";
+    font-weight: bold;
+}
+
+.info .phone:before {
+    content: "N° téléphone : ";
+    font-weight: bold;
+}
+
+.info .email:before {
+    content: "Adresse email : ";
+    font-weight: bold;
+}
+  
+.container1 {
+	width: 570px; /* La largeur de la zone de défilement */
+	height: 400px; /* La hauteur de la zone de défilement */
+	overflow-x: hidden; /* Activer la barre de défilement horizontale */
+	overflow-y: scroll; /* Désactiver la barre de défilement verticale */
+}
+
+
+  .review1 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px; /* Ajouter de la marge en bas */
+	margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review1 p {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.review1 .name {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.review1 .date {
+	color: #999;
+	font-size: 12px;
+}
+.container1::-webkit-scrollbar {
+	width: 10px; /* Largeur de la barre de défilement */
+  }
+  
+  .container1::-webkit-scrollbar-track {
+	background: #f1f1f1; /* Couleur de fond de la piste */
+	border-radius: 5px; /* Arrondir les coins de la poignée */
+  }
+  
+  .container1::-webkit-scrollbar-thumb {
+	background: #888; /* Couleur de la poignée */
+	border-radius: 5px; /* Arrondir les coins de la poignée */
+  }
+  
+  .container1::-webkit-scrollbar-thumb:hover {
+	background: #555; /* Couleur de la poignée au survol */
+  }
   
 
 html, body, div, span, applet, object,
