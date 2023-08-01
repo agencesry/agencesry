@@ -188,6 +188,45 @@
     margin: 20px;
 }
 
+/* Centrer verticalement sur les appareils mobiles */
+@media (max-width: 600px) {
+    .contact-card {
+        flex-direction: column; /* Afficher les éléments en colonne */
+        align-items: center; /* Centrer horizontalement */
+        text-align: center; /* Centrer le texte horizontalement */
+    }
+
+    .photo {
+        order: -1; /* Faire passer la photo de profil au-dessus du contenu */
+        margin-bottom: 10px; /* Ajouter une marge en bas pour séparer la photo du reste du contenu */
+		width: 150px;
+    }
+}
+
+/* Assurez-vous d'avoir inclus les liens vers les bibliothèques FontAwesome dans votre page HTML. */
+/* Par exemple : <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-wmuzApXFY5UzIwTVbRSyDbyS6DNybBtP9ZTK4RcAr3sfx6u2m6viKkRBUsy4vQupw8RMR/jKQqsv3IJJzduEw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
+
+.loading-spinner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	background: #010000;
+}
+
+.loader {
+	position: relative;
+}
+
+.loader img {
+	width: 300px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
 .photo {
     flex: 0 0 150px;
     margin-right: 20px;
@@ -245,6 +284,7 @@
 	display: flex;
 	justify-content: center;
 	position: relative; /* Permet de positionner les flèches à l'intérieur du carrousel */
+	align-items: center;
   }
   
   .instagram-profile {
@@ -273,20 +313,23 @@
   
   /* Styles pour les flèches de navigation */
   .arrow {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 2em;
-	cursor: pointer;
-  }
+    width: 30px;
+    /* height: 40px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: rgb(60 61 62);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+}
   
-  .left-arrow {
-	left: 10px;
+  .right-arrow span {
+	transform: rotate(45deg); /* Rotation pour créer une flèche vers la droite */
   }
-  
-  .right-arrow {
-	right: 10px;
-  }
+
   
   
 
@@ -1579,6 +1622,17 @@ input, select, textarea {
 			line-height: 5.5rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+			transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px rgb(237, 229, 168),
+      inset 20px 0 80px rgb(165, 131, 86),
+      inset -20px 0 80px rgb(98, 91, 33),
+      inset 20px 0 300px rgb(165, 131, 86),
+      inset -20px 0 300px rgb(98, 91, 33),
+      0 0 50px rgb(237, 229, 168),
+      -10px 0 80px rgb(165, 131, 86),
+      10px 0 80px rgb(98, 91, 33);
+  
 		}
 
 			#header .logo .icon:before {

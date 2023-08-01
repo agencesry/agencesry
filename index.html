@@ -9,6 +9,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" type="image/png" sizes="16x16" href="/images/logo1.png">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 		
 		  
 	</head>
@@ -17,6 +18,11 @@
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+				<div class="loading-spinner">
+					<div class="loader">
+						<img src="assets/giphy-21-unscreen.gif" alt="Chargement">
+					</div>
+				  </div>
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
@@ -29,16 +35,20 @@
 								& d'une expertise remarquable pour renforcer votre présence en ligne et améliorer votre image de marque.</p>
 							</div>
 						</div>
+						
 						<nav>
 							<ul>
 								<li><a href="#intro">Info</a></li>
 								<li><a href="#work">Services</a></li>
-								<li><a href="#about">Garantie</a></li>
+								<li><a href="#about">Objectifs</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
+					  
+
+					
 
 				<!-- Main -->
 					<div id="main">
@@ -48,7 +58,7 @@
 								<h2 class="major">Informations</h2>
 								<span class="image main"><img src="images/banniere.png" alt="" /></span>
 								<p><strong>Qui suis-je ?</strong></p>
-								<p>Je suis un auto-entrepreneur qui exerce depuis 3ans, spécialisée dans l'assistance des artistes, des entreprises et des influenceurs à promouvoir leurs activités en ligne. Pour ce faire, je propose des services de marketing digital sur les réseaux sociaux ainsi que des solutions de développement de sites web. Mon objectif est d'accompagner mes clients tout au long de leur croissance en leur offrant un soutien personnalisé et adapté à leurs besoins spécifiques.</p>
+								<p>Je suis un auto-entrepreneur qui exerce depuis 2023, spécialisée dans l'assistance des artistes, des entreprises et des influenceurs à promouvoir leurs activités en ligne. Pour ce faire, je propose des services de marketing digital sur les réseaux sociaux ainsi que des solutions de développement de sites web. Mon objectif est d'accompagner mes clients tout au long de leur croissance en leur offrant un soutien personnalisé et adapté à leurs besoins spécifiques.</p>
 								<p><strong>J'ai déjà eu l'occasion de collaborer avec les différents comptes ci-dessous :</strong></p>
 								<p>j'offre des services de mise en avant sur les réseaux sociaux pour tous : artistes, entreprises, influenceurs, et toute personne désirant accroître sa notoriété et sa visibilité. Grâce à des stratégies ciblées et une présence active, je peux vous aider à atteindre un public plus large et à vous démarquer dans le monde numérique d'aujourd'hui. Ensemble, créons une présence impactante sur les réseaux sociaux pour propulser votre succès.</p>
 									<div class="carousel-container">
@@ -100,7 +110,6 @@
 										<div class="arrow right-arrow" onclick="showNextProfile()">
 										  &rarr;
 										</div>
-									  <script src="assets/js/script.js"></script>
 							</article>
 
 						<article id="work">
@@ -433,6 +442,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<div id="bg"></div>
 
 		<!-- Scripts -->
+		<script src="assets/js/script.js"></script>
+			<script src="assets/js/load.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
